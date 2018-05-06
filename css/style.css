@@ -7,33 +7,38 @@ body {
     background-color: #1F1F1F;
     color: #FFF;
     letter-spacing: .2rem;
-    line-height: 3rem;
+    line-height: 2.5rem;
+    height: 100%;
 }
 h1 {
     font-weight: 500;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 h2 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
 span {
     background: linear-gradient(to right bottom, #7ED56F, #28B485);
 }
 p {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50rem;
-    grid-gap: 30rem;
+    grid-column-gap: 12rem;
+}
+
+img {
+    height: 40rem;
 }
 /* Social Media Links */
 a {
     margin-right: 1rem;
     color: #FFF;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
     text-decoration: none;
+    text-transform: uppercase;
 }
 .github:hover {
     background: #8B61FF;
@@ -51,6 +56,6 @@ a {
 .skills {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding-top: 10rem;
-    grid-gap: 5rem;
+    padding-top: 8rem;
+    grid-column-gap: 5rem;
 }
