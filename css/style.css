@@ -10,19 +10,7 @@ body {
     line-height: 2.5rem;
     height: 100%;
 }
-h1 {
-    font-weight: 500;
-    font-size: 4rem;
-}
-h2 {
-    font-size: 1.5rem;
-}
-span {
-    background: linear-gradient(to right bottom, #7ED56F, #28B485);
-}
-p {
-    font-size: 1.5rem;
-}
+/* Header */
 .header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
@@ -31,7 +19,31 @@ p {
 img {
     height: 40rem;
 }
-/* Social Media Links */
+h1 {
+    font-weight: 500;
+    font-size: 4rem;
+}
+p {
+    font-size: 1.5rem;
+}
+.animation {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15rem solid #7ED56F; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .5s step-end infinite;
+    padding: 1rem 0;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #7ED56F; }
+}
 a {
     margin-right: 1rem;
     color: #FFF;
@@ -51,7 +63,7 @@ a {
 .email:hover {
     background: #20B2AA;
 }
-/* Skills Section */
+/* Skills */
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
@@ -60,4 +72,10 @@ a {
 }
 .skills p {
     font-size: 1.4rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
+span {
+    background: linear-gradient(to right bottom, #7ED56F, #28B485);
 }
