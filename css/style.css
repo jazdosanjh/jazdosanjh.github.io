@@ -15,7 +15,7 @@ h1 {
     font-size: 4rem;
 }
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 span {
     background: linear-gradient(to right bottom, #7ED56F, #28B485);
@@ -25,8 +25,8 @@ p {
 }
 .header {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 15rem;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    grid-column-gap: 12rem;
 }
 img {
     height: 40rem;
@@ -54,9 +54,9 @@ a {
 /* Skills Section */
 .skills {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     padding-top: 8rem;
-    grid-column-gap: 5rem;
+    grid-column-gap: 10rem;
 }
 .skills p {
     font-size: 1.4rem;
