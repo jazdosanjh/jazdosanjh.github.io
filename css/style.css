@@ -2,29 +2,38 @@ html {
     font-size: 62.5%;
 }
 body {
-    background-image: url("./images/topography.svg"),
-                      linear-gradient(110deg, #F93D66, #6D47D9);
-    background-size: 34rem, auto;
-    min-height: calc(100vh - 10rem);
-    background-position: fixed;
-    margin: 5rem;
-}
-
-h1 {
+    padding: 20rem;
     font-family: 'Lato', sans-serif;
-    font-size: 15rem;
-}
-.container {
+    background-color: #1F1F1F;
     color: #FFF;
-    text-align: center;
-    text-transform: uppercase;
+    letter-spacing: .2rem;
+    line-height: 3rem;
 }
-a {
-    text-decoration: none;
-    color: #FFF;
+h1 {
+    font-weight: 500;
+    font-size: 5rem;
+}
+h2 {
+    font-size: 2.5rem;
+}
+span {
+    background: linear-gradient(to right bottom, #7ED56F, #28B485);
+}
+p {
     font-size: 2rem;
-    letter-spacing: .1rem;
-    margin: 1rem;
+}
+.header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50rem;
+    grid-gap: 30rem;
+}
+/* Social Media Links */
+a {
+    margin-right: 1rem;
+    color: #FFF;
+    font-size: 2.5rem;
+    text-decoration: none;
 }
 .github:hover {
     background: #8B61FF;
@@ -34,4 +43,14 @@ a {
 }
 .twitter:hover {
     background: #55ACEE;
+}
+.email:hover {
+    background: #20B2AA;
+}
+/* Skills Section */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 10rem;
+    grid-gap: 5rem;
 }
