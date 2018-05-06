@@ -26,9 +26,8 @@ p {
 .header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 12rem;
+    grid-column-gap: 15rem;
 }
-
 img {
     height: 40rem;
 }
@@ -58,4 +57,7 @@ a {
     grid-template-columns: repeat(4, 1fr);
     padding-top: 8rem;
     grid-column-gap: 5rem;
+}
+.skills p {
+    font-size: 1.4rem;
 }
