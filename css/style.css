@@ -79,3 +79,23 @@ h2 {
 span {
     background: linear-gradient(to right bottom, #7ED56F, #28B485);
 }
+
+@media only screen and (max-width : 1336px) {
+    .header {
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-column-gap: 10rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width : 1215px) {
+    .header {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        grid-column-gap: 6rem;
+    }
+    img {
+        height: 30rem;
+    }
+}
