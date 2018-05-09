@@ -72,7 +72,34 @@ a {
 h2 {
     border-bottom: .5rem solid #DE6262;
 }
-
 span {
     color: #DE6262;
+}
+@media only screen and (max-width: 998px) {
+    .header {
+        grid-template-columns: repeat(1, minmax(80rem, 1fr));
+        text-align: center;
+    }
+    .heading--primary {
+        grid-column: span 2;
+        grid-row: 3;
+        font-size: 2.2rem;
+    }
+    .header-image {
+        grid-row: 1;
+        grid-column: span 2;
+    }
+    .header-text {
+        grid-row: 4;
+        grid-column: span 2;
+        text-align: left;
+        font-size: 1.6rem;
+    }
+    .social-media {
+        grid-row: 2;
+        grid-column: span 2;
+    }
+    .skills {
+        grid-gap: 5rem;
+    }
 }
