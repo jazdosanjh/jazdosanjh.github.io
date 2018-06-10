@@ -9,7 +9,7 @@ html {
 }
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #F6F9FC;
+    background-image: linear-gradient(to right top, #548cf4, #00b0f3, #00c6c8, #71d297, #ced583);
     color: #1F1F1F;
     letter-spacing: .2rem;
     line-height: 3rem;
@@ -17,24 +17,20 @@ body {
 }
 /* Header */
 .header {
-    background-color: #242424;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 5rem;
-    color: #FFF;
-    padding: 5rem 25rem;
+    padding-top: 5rem;
+    text-align: center;
 }
 
 .header-image {
-    height: 30rem;
-    width: 30rem;
-    justify-self: center;
-    grid-column: 2;
-    grid-row: span 2;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 10rem;
 }
 
 h1 {
     font-size: 4rem;
+    color: #FFF;
+    text-transform: uppercase;
 }
 
 h2 {
@@ -64,7 +60,7 @@ a {
 
 .portfolio-box {
     background: #FFF;
-    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.20);
+    box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.15);
 }
 
 .portfolio-content {
@@ -72,7 +68,7 @@ a {
 }
 
 .portfolio-content ul li {
-    border: 2px solid #DE6262;
+    border: 2px solid #62de8b;
     padding: 0 1rem;
     margin: 2rem 2rem 2rem 0;
     border-radius: 5px;
@@ -93,4 +89,5 @@ button {
 
 footer {
     text-align: center;
+    color: #FFF;
 }
