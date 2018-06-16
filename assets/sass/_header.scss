@@ -1,10 +1,28 @@
 .header {
-    padding-top: 5rem;
-    text-align: center;
+    padding: 5rem 25rem;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    color: $color-white;
+}
+
+.header-content {
+    width: 45rem;
+    justify-self: center;
+
+    h1 {
+        font-size: 4rem;
+        display: inline;
+        box-shadow: 0px 5px 0px 0px $color-feature;
+    }
+
+    p {
+        font-size: 1.8rem;
+    }
 }
 
 .header-image {
-    height: 20rem;
-    width: 20rem;
+    grid-column: 2;
     border-radius: 10rem;
+    height: 17rem;
+    width: 17rem;
 }

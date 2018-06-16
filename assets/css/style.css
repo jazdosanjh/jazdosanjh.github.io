@@ -30,21 +30,34 @@ a {
   color: #FFF; }
 
 .header {
-  padding-top: 5rem;
-  text-align: center; }
+  padding: 5rem 25rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  color: #FFF; }
+
+.header-content {
+  width: 45rem;
+  justify-self: center; }
+  .header-content h1 {
+    font-size: 4rem;
+    display: inline;
+    box-shadow: 0px 5px 0px 0px #F3F570; }
+  .header-content p {
+    font-size: 1.8rem; }
 
 .header-image {
-  height: 20rem;
-  width: 20rem;
-  border-radius: 10rem; }
+  grid-column: 2;
+  border-radius: 10rem;
+  height: 17rem;
+  width: 17rem; }
 
 .project {
   display: grid;
   grid-template-columns: minmax(4rem, 1fr);
   grid-row-gap: 8rem;
-  padding: 5rem 25rem; }
+  padding: 0 30rem; }
   .project-box {
-    background: #FFF;
+    background: #F1F1F1;
     box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.15); }
     .project-box img {
       width: 100%;
@@ -62,15 +75,22 @@ a {
       border-radius: 5px;
       border: 2px solid #62DE8B; }
 
-button {
+.btn {
   margin: 0 2rem 2rem 0;
   padding: 1rem;
+  background: #424242;
   border: none;
   border-radius: 5px;
-  background-color: #9B9AF0;
   font-weight: 700;
   font-size: 1.3rem;
-  width: 10rem; }
+  width: 10rem;
+  box-shadow: inset 0 0 0 0 #62DE8B;
+  cursor: pointer; }
+
+.btn:hover {
+  box-shadow: inset 400px 0 0 0 #62DE8B;
+  transition: ease-out 1.5s;
+  background: none; }
 
 footer {
   text-align: center;

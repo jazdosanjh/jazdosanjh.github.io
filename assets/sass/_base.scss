@@ -1,6 +1,11 @@
 // Color Variables
-$color-btn: #9B9AF0;
+$color-btn: #424242;
 $color-skills: #62DE8B;
+$color-btn-slide: #62DE8B;
+
+
+$color-feature: #F3F570;
+$color-white: #FFF;
 
 // Media Queries
 $bp-large: 68.75em; // 1100px
@@ -51,5 +56,5 @@ p {
 
 a {
     text-decoration: none;
-    color: #FFF;
+    color: $color-white;
 }
