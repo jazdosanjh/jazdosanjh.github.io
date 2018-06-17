@@ -82,8 +82,7 @@ a {
     box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.15);
     min-width: 65rem; }
     .project-box img {
-      width: 100%;
-      height: auto; }
+      width: 100%; }
   .project-content {
     padding: 1rem 3rem; }
   .project-skills {
