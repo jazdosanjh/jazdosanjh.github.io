@@ -2,15 +2,32 @@
     display: grid;
     grid-template-columns: minmax(4rem, 1fr);
     grid-row-gap: 8rem;
-    padding: 0 30rem;
+    margin: 0 25rem;
+
+    @media only screen and (max-width: $bp-large) {
+        margin: 0 20rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+        margin: 0 15rem;
+    }
+
+    @media only screen and (max-width: $bp-med-sm) {
+        margin: 0 8rem;
+    }
 
     &-box {
         background: #F1F1F1;
-        box-shadow: 0px 0px 8px 2px rgba(0,0,0,0.15);
+        box-shadow: 0 0 8px 2px rgba(0,0,0,0.15);
+        min-width: 65rem;
 
         img {
             width: 100%;
             height: 25rem;
+
+            @media only screen and (max-width: $bp-med-sm) {
+                height: 20rem;
+            }
         }
     }
 
@@ -31,6 +48,7 @@
             margin: 2rem 2rem 2rem 0;
             border-radius: 5px;
             border: 2px solid $color-skills;
+            background: $color-white;
         }
     }
 }

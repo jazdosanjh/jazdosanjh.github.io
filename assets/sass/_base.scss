@@ -8,12 +8,12 @@ $color-feature: #F3F570;
 $color-white: #FFF;
 
 // Media Queries
-$bp-large: 68.75em; // 1100px
-$bp-medium: 56.25em; // 900px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 56.875em; // 910px
 $bp-med-sm: 50.00em; // 800px
-$bp-small: 37.5em; // 600px
-$bp-xs: 31.25em; // 500px
-$bp-xxs: 23.44em; // 375px
+// $bp-small: 37.5em; // 600px
+// $bp-xs: 31.25em; // 500px
+// $bp-xxs: 23.44em; // 375px
 
 
 * {
@@ -39,6 +39,8 @@ body {
     font-weight: 400;
     line-height: 1.4;
     background-image: linear-gradient(to right top, #548cf4, #00b0f3, #00c6c8, #71d297, #ced583);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 h2 {
