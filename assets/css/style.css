@@ -115,5 +115,8 @@ a {
   background: none; }
 
 footer {
+  margin-top: 5rem;
+  height: 5rem;
   text-align: center;
+  background-color: black;
   color: #FFF; }
