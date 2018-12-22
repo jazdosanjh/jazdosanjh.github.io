@@ -97,7 +97,7 @@ h2 {
 .portfolio-grid > article {
     border: .1rem solid #ADADAD;
     box-shadow: .2rem .2rem .6rem 0 #0000004D;
-    background: white;
+    background: #FFF;
 }
 .portfolio-grid > article img {
     max-width: 100%;
@@ -112,18 +112,28 @@ h2 {
       line-height: 2rem;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color:#FFF;
+}
+
 .btn-portfolio {
-    margin: 1rem 1rem 0 0;
-    padding: .5rem 1rem;
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 1rem 1rem;
     border: .1rem solid transparent;
     background-color: #1D242A;
     color: #FFF;
+    font-size: 1.2rem;
 }
 .btn-portfolio:hover {
     background-color: #FCD569;
     transition: .3s ease-in;
-    color: #000;
     cursor: pointer;
+    color: #000;
 }
 /* Footer */
 footer {
@@ -132,9 +142,9 @@ footer {
     text-align: center;
 }
 .social li {
+    margin: 0 1rem;
     display: inline-block;
     list-style-type: none;
-    margin: 0 1rem;
 }
 .fa {
     font-size: 2.5rem;
@@ -156,6 +166,7 @@ footer {
     border-radius: 10rem;
     border: .2rem solid #FFFFFF4D;
     transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 .border:hover {
     color: #FFFFFFE6;
